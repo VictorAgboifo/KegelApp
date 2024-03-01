@@ -2,14 +2,23 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
+   
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'select-level',
     pathMatch: 'full'
+  },
+  {
+    path: 'select-level',
+    loadChildren: () => import('./select-level/select-level.module').then( m => m.SelectLevelPageModule)
+  },
+  {
+    path: 'male-kegel',
+    loadChildren: () => import('./male-kegel/male-kegel.module').then( m => m.MaleKegelPageModule)
+  },
+  {
+    path: 'female-kegel',
+    loadChildren: () => import('./female-kegel/female-kegel.module').then( m => m.FemaleKegelPageModule)
   },
 ];
 

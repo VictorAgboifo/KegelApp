@@ -24,3 +24,177 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+
+
+
+
+/*ion-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--ion-color-warning);
+}*/   //turned off
+
+
+
+ion-card {
+  box-shadow: none;
+  border-radius: 2px;
+  //transform: translateY(-4%);
+  background-color: rgb(255, 255, 255, 0.09);
+  backdrop-filter: blur(2px);
+}
+
+
+
+ion-segment{
+  --background: none;
+  ion-segment-button{
+    font-size: 1rem;
+    --border-width: 0;
+   --padding-start: 8px;
+   --padding-bottom: 10px;
+   --padding-top: 10px;
+   --padding-end: 8px;
+   --background-checked: #000000;
+   --indicator-color: transparent!important;
+   --color: #d1d1d1;
+   --color-checked: #ffffff;
+   font-weight: bold;
+   
+  }
+}
+ion-content {
+  --background: url('/assets/img/bg2.jpg') no-repeat 100% 100%;
+  background-size: cover;
+}
+
+/* Define global styles for all paragraphs with a class of 'card-description' */
+h3.card-description {
+  color: var(--ion-color-light);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Define global styles for all ion-card-subtitle elements */
+ion-card-subtitle {
+  color: var(--ion-color-light);
+  font-size: 14px;
+  //text-transform: lowercase;
+}
+
+ion-button {
+  --color: var(--ion-color-light); // Set button text color
+  --background: var(--ion-color-dark); // Set button background color
+  --padding-start: 16px; // Set button padding
+  --padding-end: 16px; // Set button padding
+  --margin-bottom: 8px; // Set button margin
+  --border-radius: 8px; // Set button border radius
+}
+
+swiper-container {
+  width: 100%;
+  height: 80%;
+}
+
+swiper-slide {
+   text-align: center;
+   padding: 30px;
+}
+
+
+swiper-container {
+  --swiper-pagination-bullet-inactive-color: var(--ion-color-step-200, #cccccc);
+  --swiper-pagination-color: var(--ion-color-primary, #0456fa);
+  --swiper-pagination-progressbar-bg-color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.25);
+  --swiper-scrollbar-bg-color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.1);
+  --swiper-scrollbar-drag-bg-color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.5);
+
+}
+
+
+
+swiper-slide {
+  display: flex;
+  position: relative;
+
+  flex-direction: column;
+  flex-shrink: 0;
+  //align-items: center;
+  //justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  font-size: 18px;
+
+  text-align: center;
+  box-sizing: border-box;
+}
+
+swiper-slide img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+swiper-slide {
+  div {
+    h2 {
+      color: var(--ion-color-light); /* Use the primary color for h2 text */
+      font-size: 24px; /* Set the font size for h2 */
+      font-weight: bold; /* Set the font weight for h2 */
+      margin-bottom: 10px;
+      text-align: left; /* Add some margin below h2 */
+    }
+    h3 {
+      color: var(--ion-color-light); /* Use the primary color for h2 text */
+      font-size: 20px; /* Set the font size for h2 */
+      font-weight: bold; /* Set the font weight for h2 */
+      margin-bottom: 10px; 
+      text-align: left;/* Add some margin below h2 */
+    }
+
+
+    p {
+      color: var(--ion-color-light); /* Use the secondary color for p text */
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      text-align: left; /* Align p text to left */
+    }
+
+    ol {
+      margin-left: 20px;
+      text-align: left; 
+      font-weight: bold;/* Align ol text to the left */
+      
+      li {
+        color: var(--ion-color-light); /* Use the tertiary color for list items */
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-bottom: 5px;
+        text-align: left; /* Align list item text to justify */
+      }
+    }
+  }
+}
+
+
+/*.custom-card {
+  // Add your custom styles here
+  ion-label {
+    font-weight: bold;
+    color: var(--ion-color-primary);
+  }*/
+
+ /* ion-thumbnail {
+    width: 50px; // Example width
+    height: 50px; // Example height
+  }
+}*/
