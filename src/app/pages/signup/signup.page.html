@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>SignUp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+<ion-card>
+  <div>
+    <ion-title color="light"><h3>WELCOME!</h3></ion-title>
+    <ion-title color="light"><p>SignUp to create your account</p></ion-title>
+  </div>
+  <form>
+    <div class="ion-padding">
+      <ion-item>
+        <ion-input></ion-input>
+        <ion-icon name="person"></ion-icon>
+      </ion-item>
+    </div>
+    <div class="ion-padding">
+      <ion-item>
+        <ion-input></ion-input>
+        <ion-icon name="lock-closed"></ion-icon>
+      </ion-item>
+    </div>
+
+    <ion-button routerLink="/select-level" expand="block">SIGNUP</ion-button>
+    
+
+    <div class="ion-padding">
+      <h3 style="color: var(--ion-color-light)">Already a member?</h3>
+      <a routerLink="/login">SignIn Now</a>
+    </div>
+    
+
+     </form>
+
+     
+     
+    </ion-card>
+</ion-content>
+
+
+
+
+
