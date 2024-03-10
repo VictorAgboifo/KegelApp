@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "kegelapp-b7ebf": {
+      "hosting": {
+        "app": [
+          "kegelapp-b7ebf"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "kegelapp-b7ebf"
+  }
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">KegelApp</string>
+    <string name="title_activity_main">KegelApp</string>
+    <string name="package_name">com.victoragboifo.kegelapp</string>
+    <string name="custom_url_scheme">com.victoragboifo.kegelapp</string>
+</resources>

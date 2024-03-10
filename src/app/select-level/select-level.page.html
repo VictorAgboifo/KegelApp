@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Select type</ion-title>
+    <ion-title>Select Kegel Type</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -17,11 +17,25 @@
   </ion-segment>
 
 
+  <ion-card style="transform: translateY(120%);">
+    <ion-card-header>
+      <ion-card-title>
+        <ion-card-subtitle>
 
-  <ion-card routerLink="/male-kegel" *ngIf="selectedsegment === 'male'">
+        </ion-card-subtitle>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+    </ion-card-content>
+  </ion-card>
+
+
+
+  <ion-card  *ngIf="selectedsegment === 'male'">
     <img alt="Silhouette of mountains" src="assets/img/km1.jpg" />
     <ion-card-header>
-      <ion-card-title> <ion-button expand="block">GO TO WORKOUT</ion-button></ion-card-title>
+      <ion-card-title> <ion-button routerLink="/male-kegel" expand="block">GO TO WORKOUT</ion-button></ion-card-title>
       
     </ion-card-header>
   
@@ -30,148 +44,18 @@
      </ion-card-content>
   </ion-card>
 
-    <ion-card  routerLink="/female-kegel" *ngIf="selectedsegment === 'female'">
+    <ion-card   *ngIf="selectedsegment === 'female'">
     <img alt="Silhouette of mountains" src="assets/img/kf1.jpg" />
     <ion-card-header>
-      <ion-card-title> <ion-button expand="block">GO TO WORKOUT</ion-button></ion-card-title>
+      <ion-card-title> <ion-button routerLink="/female-kegel" expand="block">GO TO WORKOUT</ion-button></ion-card-title>
     </ion-card-header>
   
     <ion-card-content>
       <!-- <p class="description">Here's a small text description for the card content. Nothing more, nothing less.</p> -->
     </ion-card-content>
+
   </ion-card>
-
-<!-- kegel ion-cards end -->
-
-<!-- swiper container begins -->
-<!-- home.page.html -->
-
-<ion-card>
-  <swiper-container [slidesPerView]="1" [loop]="true" [navigation]="true" [autoplay]="true" [pagination]="true" [scrollbar]="true">
-
-    <swiper-slide *ngIf="selectedsegment === 'female'">
-      <div>
-        <h3><u>FEMALE PELVIC FLOOR</u></h3>
-        <img alt="workout" src="assets/img/pelvic-floor-female.png" />
-      </div>
-    </swiper-slide>
-  
-    <swiper-slide *ngIf="selectedsegment === 'male'">
-      <div>
-        <h3><u>MALE PELVIC FLOOR</u></h3>
-        <img alt="workout" src="assets/img/pelvic-floor-male.png" />
-      </div>
-    </swiper-slide>
-  
-    <swiper-slide>
-      <div>
-          <p>Kegel exercises (also called pelvic floor exercises) help strengthen your pelvic floor muscles. Your pelvic floor muscles support organs in your pelvis, like your bladder, bowel, and vagina.</p>
-          <p>The pelvic floor muscles hold your organs in place while also assisting with bodily functions like peeing, pooping, and sex.</p> 
-      </div>
-    </swiper-slide>
-    
-    <swiper-slide *ngIf="selectedsegment === 'male'">
-      <div>
-        <h3><U>KEGEL EXERCISES AID WITH</U></h3>
-          <Ol>
-            <li>
-              Urinary incontinence <br>(leaking-pee)
-            </li>
-            <li>
-              Urge incontinence <br>(an urgent need to pee),
-            </li>
-            <li>
-              Fecal incontinence <br>(leaking-poop),
-            </li>
-            <li>
-              Pelvic organ prolapse <br> (pelvic-organs-sagging).
-            </li>
-
-          </Ol>  
-      </div>
-    </swiper-slide>
-
-    <swiper-slide *ngIf="selectedsegment === 'female'">
-      <div>
-          <h3><U>KEGEL EXERCISES AID WITH</U></h3>
-          <Ol>
-            <li>
-              Urinary incontinence <br>(leaking-pee)
-            </li>
-            <li>
-              Urge incontinence <br>(an urgent need to pee),
-            </li>
-            <li>
-              Fecal incontinence <br>(leaking-poop),
-            </li>
-            <li>
-              Pelvic organ prolapse <br> (pelvic-bulging-into-vagina).
-            </li>
-
-          </Ol>  
-      </div>
-    </swiper-slide>
-
-    <swiper-slide>
-      <div>
-          <p>Kegel exercises help keep your pelvic floor muscles “fit.” Much like you may strengthen other muscles in your body by lifting weights, doing Kegels is a way to keep your pelvic floor muscles strong.</p>
-          <p>Kegels can also improve your sexual health and help improve your orgasms.</p>
-          
-      </div>
-    </swiper-slide>
-
-    <swiper-slide *ngIf="selectedsegment === 'female'">
-      <div>
-        <h3><u>IMPORTANCE FOR FEMALES</u> </h3>
-          <p>Helps improve bladder control, especially after childbirth or with aging.</p>
-          <p>May enhance sexual pleasure and reduce the risk of pelvic organ prolapse.</p>
-          <p>Can be beneficial during and after pregnancy to support the pelvic organs and aid in recovery.</p>
-          
-      </div>
-    </swiper-slide>
-
-
-    <swiper-slide *ngIf="selectedsegment === 'male'">
-      <div>
-        <h3><u>IMPORTANCE FOR MALES</u> </h3>
-          <p>Can improve bladder control and help with urinary incontinence.</p>
-          <p>May aid in erectile dysfunction by improving blood flow to the pelvic region.</p>
-          <p>Can benefit men after prostate surgery to regain bladder control and maintain pelvic floor health.</p>
-          
-      </div>
-    </swiper-slide>
-
-    
-    <swiper-slide >
-      <div>
-        <h3><u>DISCLAIMER</u></h3>
-          <p>Before starting any exercise regimen, including Kegel exercises, please consult with your healthcare provider, especially if you have any underlying health conditions or concerns.</p>
-          <p>The information provided here is for educational purposes only and is not intended to replace professional medical advice.</p>
-                    
-      </div>
-    </swiper-slide>
-  
-    <swiper-slide *ngIf="selectedsegment === 'male'" >
-      <div>
-        <h3><u>LOCATING KEGEL MUSCLES</u></h3>
-          <p>Try stopping the flow of your pee when you’re sitting on the toilet.You can also imagine you’re trying to prevent yourself from passing gas. </p>
-      </div>
-    </swiper-slide>
-
-    
-    <swiper-slide *ngIf="selectedsegment === 'female'" >
-      <div>
-        <h3><u>LOCATING KEGEL MUSCLES</u></h3>
-        <p>Try stopping the flow of your pee when you’re sitting on the toilet.
-          <p>You can also insert a finger into your vagina and squeeze the muscles in your vagina around it. You should feel pressure around your finger. The muscles you feel ‘lifting’ inside of you when you’re trying these activities are the same ones you strengthen during Kegel exercises.</p>
-                    
-      </div>
-    </swiper-slide>
-
-  </swiper-container>
-  
-</ion-card>
-
+ 
 </ion-content>
 
 
