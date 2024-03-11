@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: FemaleKegelPage
+  },
+  {
+    path: 'cat-cow',
+    loadChildren: () => import('./cat-cow/cat-cow.module').then( m => m.CatCowPageModule)
   }
 ];
 
